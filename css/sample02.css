@@ -1,0 +1,174 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100vw;
+    height: 100vh;
+}
+
+.navi_lists li{
+    line-height: 2;
+}
+
+.navi_lists{
+    list-style-type: none;
+    display: flex;
+}
+
+
+.navi_list{
+    background-color: #262626;
+    width: 9rem;
+    height: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.navi_list:first-child{
+    background-color: tomato;
+    width: 4rem;
+    height: 2rem;
+}
+.navi_list:first-child:hover{
+    background-color: #ff6348;
+}
+
+.navi_list a{
+    text-decoration: none;
+    display: block;
+}
+
+.navi_list a:hover{
+    background-color: #6d6d6d;
+}
+
+.navi_list:nth-child(1) :hover{
+    background-color: #fa3d1d;
+}
+
+.navi_list a:visited{
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+.dropdown_lists{
+    display: none;
+}
+.dropdown_list{
+    width: 9rem;
+    height: 2rem;
+}
+.navi_list:hover .dropdown_lists{
+    display: block;
+}
+
+.dropdowndown_lists{
+    display: none;
+    color: #FFF;
+}
+.dropdown_lists:hover .dropdowndown_lists{
+    display: block;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 一番大きな ul */
+.navi_lists{
+    list-style-type: none;
+    display: flex;
+}
+
+/* 一番大きな ul の中の li */
+.navi_list{
+    width: 9rem;
+    height: 2rem;
+    line-height: 2;
+    background-color: #262626;
+    color: #fff;
+    list-style: none;
+    border-left: solid 1px #FFF;
+    text-align: center;
+    align-items: center;
+}
+
+/* 一番大きな ul の中の li の a */
+.navi_list a{
+    display: block;
+    text-decoration: none;
+}
+.navi_list a:hover{
+    background-color: #6d6d6d;
+}
+.navi_list a:visited{
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* 一番大きな ul の中の li の一番最初 */
+.navi_list:first-child{
+    background-color: tomato;
+    width: 4rem;
+    height: 2rem;
+}
+.navi_list:first-child a:hover{
+    background-color: #fa3d1d;
+}
+
+/* 二番目に大きな ul */
+.dropdown_lists{
+    display: none;
+}
+.navi_list:hover .dropdown_lists{
+    display: block;
+}
+
+/* 二番目に大きな li */
+.dropdown_list{
+    width: 9rem;
+    height: 2rem;
+    line-height: 2;
+    background-color: #262626;
+    color: #fff;
+    list-style: none;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+/* 三番目に大きな ul */
+.dropdowndown_lists{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 9rem;
+}
+.dropdown_list:hover .dropdowndown_lists{
+    display: block;
+}
+
+/* 三番目に大きな li */
+.dropdowndown_list{
+    width: 9rem;
+    height: 2rem;
+    line-height: 2;
+    background-color: #262626;
+    color: #fff;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
