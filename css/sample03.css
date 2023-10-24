@@ -6,12 +6,19 @@
     justify-content: center;
     align-items: center;
 }
-.container p{
+.everytime{
     width: 100%;
     height: auto;
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
+.hyokkori{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 .btn{
     margin-top: 24px;
 }
