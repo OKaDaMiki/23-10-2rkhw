@@ -79,7 +79,7 @@ nav{
     padding: 0;
 }
 nav{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -88,6 +88,7 @@ nav{
 
 /* 一番大きな ul */
 .navi_lists{
+    width: 40rem;
     list-style-type: none;
     display: flex;
 }
@@ -96,36 +97,37 @@ nav{
 .navi_list{
     width: 9rem;
     height: 2rem;
-    line-height: 2;
-    background-color: #262626;
-    color: #fff;
-    list-style: none;
-    border-left: solid 1px #FFF;
     text-align: center;
     align-items: center;
+    line-height: 2;
+    list-style: none;
+    background-color: #262626;
+    border-left: solid 1px #FFF;
 }
-
-/* 一番大きな ul の中の li の a */
-.navi_list a{
-    display: block;
-    text-decoration: none;
-}
-.navi_list a:hover{
-    background-color: #6d6d6d;
-}
-.navi_list a:visited{
-    color: #FFF;
-    text-decoration: none;
-}
-
 /* 一番大きな ul の中の li の一番最初 */
 .navi_list:first-child{
-    background-color: tomato;
     width: 4rem;
     height: 2rem;
+    background-color: tomato;
 }
 .navi_list:first-child a:hover{
     background-color: #fa3d1d;
+}
+
+/* 一番大きな ul の中の li の a */
+.navi_list > a{
+    display: block;
+}
+.navi_list > a:link{
+    color: #fff;
+    text-decoration: none;
+}
+.navi_list > a:hover{
+    background-color: #6d6d6d;
+}
+.navi_list > a:visited{
+    color: #FFF;
+    text-decoration: none;
 }
 
 /* 二番目に大きな ul */
@@ -140,13 +142,27 @@ nav{
 .dropdown_list{
     width: 9rem;
     height: 2rem;
-    line-height: 2;
-    background-color: #262626;
-    color: #fff;
-    list-style: none;
     position: relative;
     text-align: center;
     align-items: center;
+    line-height: 2;
+    list-style: none;
+    background-color: #262626;
+}
+
+.dropdown_list > a{
+    display: block;
+}
+.dropdown_list > a:link{
+    color: #fff;
+    text-decoration: none;
+}
+.dropdown_list > a:hover{
+    background-color: #6d6d6d;
+}
+.dropdown_list > a:visited{
+    color: #FFF;
+    text-decoration: none;
 }
 
 /* 三番目に大きな ul */
@@ -164,11 +180,25 @@ nav{
 .dropdowndown_list{
     width: 9rem;
     height: 2rem;
-    line-height: 2;
-    background-color: #262626;
-    color: #fff;
-    list-style: none;
     text-align: center;
     align-items: center;
+    color: #fff;
+    line-height: 2;
+    list-style: none;
+    background-color: #262626;
 }
 
+.dropdowndown_list > a{
+    display: block;
+}
+.dropdowndown_list > a:link{
+    color: #fff;
+    text-decoration: none;
+}
+.dropdowndown_list > a:hover{
+    background-color: #6d6d6d;
+}
+.dropdowndown_list > a:visited{
+    color: #FFF;
+    text-decoration: none;
+}
