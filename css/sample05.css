@@ -1,9 +1,12 @@
 body{
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 .square{
     width: 125px;
     height: 125px;
+    /* transform: 0,0; */
+    position: absolute;
     background-color: tomato;
 }
