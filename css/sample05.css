@@ -4,9 +4,8 @@ body{
     position: relative;
 }
 .square{
-    width: 125px;
-    height: 125px;
-    /* transform: 0,0; */
+    width: 120px;
+    height: 120px;
     position: absolute;
     background-color: tomato;
 }

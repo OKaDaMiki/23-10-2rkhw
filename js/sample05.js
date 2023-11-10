@@ -1,17 +1,24 @@
 //四角の上でマウスを押した時、四角の真ん中の座標をマウスの座標にする
+//マウスを動かしたらついていくようにする
 //マウスのボタンが上がった時にマウスの座標の補足を外す
+
 const square = document.querySelector(".square");
-// let sWidth = square.style.clientwidth;
-// let sHeight = square.style.clientheight;
-// let sTop = square.style.clienttop;
-// let sLeft = square.style.clientleft;
+let Drag = false;
 
-console.dir(square);
+window.addEventListener("mousedown"),
+    (e) => {
+        Drag = false;
+    };
 
-// document.addEventListener("mousedown", function () {
-document.addEventListener("mousemove", function (event) {
-    square.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
-    // square.style.top = event.clientX;
-    // square.style.left = event.clientY;
-});
-// });
+window.addEventListener("mousemove"),
+    (e) => {
+        if (Drag) {
+            const x = e.clientX;
+            const y = e.clientY;
+        }
+    };
+
+window.addEventListener("mouseup"),
+    () => {
+        Drag = false;
+    };
