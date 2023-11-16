@@ -5,20 +5,26 @@
 const square = document.querySelector(".square");
 let Drag = false;
 
-window.addEventListener("mousedown"),
-    (e) => {
-        Drag = false;
-    };
+square.addEventListener("mousedown", (e) => {
+    Drag = true;
+    console.log("down!!");
+});
+square.addEventListener("mouseup", () => {
+    Drag = false;
+    console.log("up!");
+});
 
-window.addEventListener("mousemove"),
-    (e) => {
-        if (Drag) {
-            const x = e.clientX;
-            const y = e.clientY;
-        }
-    };
+window.addEventListener("mousemove", (event) => {
+    if (!Drag) return;
+    square.style.transform = `translate(${
+        event.clientX - square.clientWidth / 2
+    }px, ${event.clientY - square.clientHeight / 2}px)`;
+});
 
-window.addEventListener("mouseup"),
-    () => {
-        Drag = false;
-    };
+// window.addEventListener("mousemove"),
+//     (e) => {
+//         if (Drag) {
+//             const x = e.clientX;
+//             const y = e.clientY;
+//         }
+//     };
